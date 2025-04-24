@@ -15,12 +15,12 @@ pub mod cluster;
 mod database;
 pub mod directory;
 mod error;
-#[cfg(any(feature = "fdb-7_0", feature = "fdb-7_1", feature = "fdb-7_3"))]
+#[cfg(any(feature = "fdb-7_0", feature = "fdb-7_1", feature = "fdb-7_3", feature = "fdb-7_4"))]
 #[deny(missing_docs)]
 pub mod fdb_keys;
 pub mod future;
 mod keyselector;
-#[cfg(any(feature = "fdb-7_1", feature = "fdb-7_3"))]
+#[cfg(any(feature = "fdb-7_1", feature = "fdb-7_3", feature = "fdb-7_4"))]
 #[deny(missing_docs)]
 pub mod mapped_key_values;
 /// Generated configuration types for use with the various `set_option` functions

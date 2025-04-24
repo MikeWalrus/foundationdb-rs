@@ -91,6 +91,10 @@ fn main() {
     {
         api_version = 730;
     }
+    #[cfg(feature = "fdb-7_4")]
+    {
+        api_version = 740;
+    }
 
     // Sigh, bindgen only takes a String for its header path, but that's UTF-8 while
     // PathBuf is OS-native...
